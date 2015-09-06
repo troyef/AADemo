@@ -27,4 +27,4 @@ build/Release
 node_modules
 
 api_key.txt
-server/config.js
+server/config.js.local
