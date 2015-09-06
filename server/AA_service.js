@@ -40,7 +40,7 @@ exports.getCombinedAnalysis = function getCombinedAnalysis(keyword, callback){
 //We're also adding in some service specific info for the web endpoint.
 
 exports.getTwitterAnalysis = function getTwitterAnalysis(keyword, callback){
-  var tw_url = configUrl + 'api/tw' + encodeURIComponent(keyword) + '/text';
+  var tw_url = configUrl + 'api/tw/' + encodeURIComponent(keyword) + '/text';
   doRequest(tw_url,function(resp){
     resp.svc_title = 'Twitter';
     resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 tweets that mention the specified keyword. '
@@ -50,7 +50,7 @@ exports.getTwitterAnalysis = function getTwitterAnalysis(keyword, callback){
 
 
 exports.getStackexchangeAnalysis = function getCombinedAnalysis(keyword, callback){
-  var se_url = configUrl + 'api/tw' + encodeURIComponent(keyword) + '/text';
+  var se_url = configUrl + 'api/se/' + encodeURIComponent(keyword) + '/text';
   doRequest(se_url,function(resp){
     resp.svc_title = 'Stackoverflow';
     resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 Stachoverflow questions that mention the specified keyword or are tagged with the keyword. '
