@@ -1,0 +1,27 @@
+{
+  "name": "AADemo",
+  "version": "0.0.0",
+  "description": "A Demo using AlchemyApi Services",
+  "main": "go.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troyef/AADemo.git"
+  },
+  "author": "troyef",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "stackexchange": "^0.3.0",
+    "twitter-node-client": "0.0.6",
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "bundle": "browserify -t reactify client/index.js -o public/bundle.js",
+    "watch": "watchify -t reactify client/index.js -o public/bundle.js -dv"
+  }
+}
