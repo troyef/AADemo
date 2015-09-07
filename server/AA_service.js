@@ -43,7 +43,7 @@ exports.getTwitterAnalysis = function getTwitterAnalysis(keyword, callback){
   var tw_url = configUrl + 'api/tw/' + encodeURIComponent(keyword) + '/text';
   doRequest(tw_url,function(resp){
     resp.svc_title = 'Twitter';
-    resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 tweets that mention the specified keyword. '
+    resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 tweets that mention the specified keyword. ';
     callback.call(undefined, resp);
   });
 };
@@ -53,7 +53,7 @@ exports.getStackexchangeAnalysis = function getCombinedAnalysis(keyword, callbac
   var se_url = configUrl + 'api/se/' + encodeURIComponent(keyword) + '/text';
   doRequest(se_url,function(resp){
     resp.svc_title = 'Stackoverflow';
-    resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 Stachoverflow questions that mention the specified keyword or are tagged with the keyword. '
+    resp.svc_description = 'AlchemyApi language analysis performed on a search of the last 100 Stachoverflow questions that mention the specified keyword or are tagged with the keyword. ';
     callback.call(undefined, resp);
   });
 };
