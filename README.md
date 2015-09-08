@@ -35,9 +35,6 @@ npm run start
 
 ```
 
-Browse to:
+Browse to: [http://localhost:3001](http://localhost:3001)
 
-``` sh
-[http://localhost:3001](http://localhost:3001)
 
-```
