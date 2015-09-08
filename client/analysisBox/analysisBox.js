@@ -6,7 +6,7 @@ var Concepts = require('./concepts');
 var AnalysisBox = React.createClass({
   
   render: function() {
-    console.log(this.props.data);
+    
     var i, keywordSentiment = '', kwFound = false;
     
     if (typeof this.props.data.keywords !== 'undefined'){
