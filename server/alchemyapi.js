@@ -61,6 +61,7 @@ function AlchemyAPI() {
 
 	//Load the key from api_key.txt
 	try {
+    //key = process.env.AA_KEY;
 		key = fs.readFileSync(__dirname + '/api_key.txt').toString().trim();
 	}
 	catch(err) {

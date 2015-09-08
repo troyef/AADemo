@@ -8,4 +8,4 @@ exports.tw_config = {
 
 exports.se_key = process.env.SE_KEY;
 
-exports.urlBase = 'https://tef-aa-demo.herokuapp.com/';
+exports.urlBase = 'http://localhost:3001';
